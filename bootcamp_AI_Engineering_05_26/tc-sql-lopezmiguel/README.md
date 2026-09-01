@@ -151,53 +151,58 @@ parte_2_modelo_bigquery/
 └── 📄 README.md                        # Documentación principal
 ~~~
 
+
 <div align="center">
 💻 Tecnologías Utilizadas
-</div>
-Categoría	Tecnología	Versión	Propósito
-Lenguaje	Python	3.12+	Lenguaje principal
-Entorno	Jupyter Notebook	—	Desarrollo interactivo
-Cloud Platform	Google Cloud Platform	—	Infraestructura en la nube
-Data Warehouse	Google BigQuery	—	Almacenamiento y consultas SQL
-Manipulación de Datos	Pandas	2.0+	Procesamiento de DataFrames
-Generación de Datos	Faker	20.0+	Datos sintéticos realistas
-Variables de Entorno	python-dotenv	1.0+	Gestión de credenciales
-BigQuery Client	google-cloud-bigquery	3.0+	API de BigQuery para Python
-Integración	pandas-gbq	0.19+	Carga de DataFrames a BigQuery
-Tipado	db-dtypes	—	Tipos de datos para BigQuery
-Serialización	pyarrow	—	Serialización eficiente
-IDE Recomendado	VS Code / Jupyter	—	Entorno de desarrollo
+| Categoría                | Tecnología            | Versión | Propósito                       |
+| ------------------------ | --------------------- | ------- | ------------------------------- |
+| 🐍 Lenguaje              | Python                | 3.12+   | Lenguaje principal              |
+| 📓 Entorno               | Jupyter Notebook      | —       | Desarrollo interactivo          |
+| ☁️ Cloud Platform        | Google Cloud Platform | —       | Infraestructura en la nube      |
+| 🗄️ Data Warehouse       | Google BigQuery       | —       | Almacenamiento y consultas SQL  |
+| 🐼 Manipulación de Datos | Pandas                | 2.0+    | Procesamiento de DataFrames     |
+| 🎲 Generación de Datos   | Faker                 | 20.0+   | Generación de datos sintéticos  |
+| 🔐 Variables de Entorno  | python-dotenv         | 1.0+    | Gestión de variables de entorno |
+| 🔌 BigQuery Client       | google-cloud-bigquery | 3.0+    | API de BigQuery para Python     |
+| 🔄 Integración           | pandas-gbq            | 0.19+   | Carga de DataFrames a BigQuery  |
+| 🔢 Tipado                | db-dtypes             | —       | Tipos de datos para BigQuery    |
+| ⚡ Serialización          | pyarrow               | —       | Serialización eficiente         |
+| 💻 IDE                   | VS Code / Jupyter     | —       | Entorno de desarrollo           |
+
 <div align="center">
 🗄️ Datos Generados
 </div>
-El proyecto genera datos sintéticos realistas para todas las entidades:
 
-Entidad	Registros	Descripción de los Datos
-categories	7	Categorías predefinidas (Electrónica, Hogar, Deportes, etc.)
-customers	500	Clientes con nombres, emails y países de todo el mundo
-products	70	Productos distribuidos en las 7 categorías con precios realistas
-orders	2.000	Pedidos con fechas, estados y totales calculados
-order_items	5.044	Líneas de pedido con cantidades y precios
-payments	2.000	Pagos con diferentes métodos (tarjeta, PayPal, etc.)
-reviews	306	Reseñas con valoraciones del 1 al 5 y comentarios
-TOTAL	~7.927	Volumen de datos completo para análisis
+| Entidad       |  Registros | Descripción                                                      |
+| ------------- | ---------: | ---------------------------------------------------------------- |
+| `categories`  |          7 | Categorías predefinidas como Electrónica, Hogar, Deportes, etc.  |
+| `customers`   |        500 | Clientes con nombres, emails y países de todo el mundo           |
+| `products`    |         70 | Productos distribuidos en las 7 categorías con precios realistas |
+| `orders`      |      2.000 | Pedidos con fechas, estados y totales calculados                 |
+| `order_items` |      5.044 | Líneas de pedido con cantidades y precios                        |
+| `payments`    |      2.000 | Pagos con diferentes métodos como tarjeta, PayPal, etc.          |
+| `reviews`     |        306 | Reseñas con valoraciones del 1 al 5 y comentarios                |
+| **TOTAL**     | **~7.927** | **Volumen de datos completo para análisis**                      |
+
+
 <div align="center">
 ⚙️ Instalación y Configuración
 </div>
 📋 Prerrequisitos
-🐍 Python 3.12 o superior (Descargar)
 
+Antes de comenzar, es necesario disponer de:
+
+🐍 Python 3.12 o superior
 ☁️ Cuenta de Google Cloud
-
 📁 Proyecto de Google Cloud activo
-
 🔌 BigQuery API habilitada
-
 🔑 Service Account con permisos para BigQuery
-
 📓 Jupyter Notebook o VS Code con soporte para notebooks
-
 🚀 Pasos de Instalación
+
+
+
+
 1️⃣ Clonar el repositorio
 
 ~~~
@@ -304,13 +309,15 @@ Este notebook:
 </div>
 El proyecto incluye 6 consultas analíticas que responden preguntas de negocio clave:
 
-#	Consulta	Descripción
-1	📊 Ingresos por mes	Análisis de tendencias mensuales de ingresos
-2	🏆 Productos más vendidos	Ranking de productos por cantidad vendida
-3	🌍 Distribución de clientes por país	Análisis geográfico de la base de clientes
-4	⏱️ Tiempo medio de entrega	Métricas de eficiencia en entregas
-5	💰 Ingresos y margen bruto por categoría	Rentabilidad por categoría de producto
-6	📍 Distribución de estados de pedidos	Análisis del ciclo de vida de los pedidos
+|  # | Consulta                                 | Descripción                                  |
+| -: | ---------------------------------------- | -------------------------------------------- |
+|  1 | 📊 Ingresos por mes                      | Análisis de tendencias mensuales de ingresos |
+|  2 | 🏆 Productos más vendidos                | Ranking de productos por cantidad vendida    |
+|  3 | 🌍 Distribución de clientes por país     | Análisis geográfico de la base de clientes   |
+|  4 | ⏱️ Tiempo medio de entrega               | Métricas de eficiencia en entregas           |
+|  5 | 💰 Ingresos y margen bruto por categoría | Rentabilidad por categoría de producto       |
+|  6 | 📍 Distribución de estados de pedidos    | Análisis del ciclo de vida de los pedidos    |
+
 Cada consulta está optimizada para BigQuery y utiliza funciones SQL avanzadas.
 
 <div align="center">
