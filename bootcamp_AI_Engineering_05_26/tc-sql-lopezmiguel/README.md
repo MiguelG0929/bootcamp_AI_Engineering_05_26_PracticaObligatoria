@@ -154,6 +154,8 @@ parte_2_modelo_bigquery/
 
 <div align="center">
 💻 Tecnologías Utilizadas
+</div>
+    
 | Categoría                | Tecnología            | Versión | Propósito                       |
 | ------------------------ | --------------------- | ------- | ------------------------------- |
 | 🐍 Lenguaje              | Python                | 3.12+   | Lenguaje principal              |
@@ -188,6 +190,7 @@ parte_2_modelo_bigquery/
 <div align="center">
 ⚙️ Instalación y Configuración
 </div>
+
 📋 Prerrequisitos
 
 Antes de comenzar, es necesario disponer de:
