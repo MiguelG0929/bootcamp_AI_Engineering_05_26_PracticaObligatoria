@@ -101,7 +101,8 @@ El modelo está compuesto por **7 entidades** totalmente normalizadas:
 
 ### 🔗 Relaciones Principales
 
-```mermaid
+
+mermaid
 graph LR
     A[customers] -->|1:N| B[orders]
     C[categories] -->|1:N| D[products]
@@ -354,4 +355,4 @@ Este proyecto está bajo la licencia MIT - ver el archivo LICENSE para más deta
 ⭐ ¡Gracias por visitar este proyecto!
 Si te ha sido útil, no olvides darle una ⭐ en GitHub.
 
-</div> ```
+</div>
