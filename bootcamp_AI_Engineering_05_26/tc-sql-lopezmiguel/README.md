@@ -373,13 +373,20 @@ Estas rutas están incluidas en .gitignore.
 <div align="center">
 📄 Licencia
 </div>
-Este proyecto está bajo la licencia MIT - ver el archivo LICENSE para más detalles.
+
+Este proyecto está bajo la licencia MIT.
+
+Consulta el archivo LICENSE para obtener más información.
 
 <div align="center">
 ⭐ ¡Gracias por visitar este proyecto!
-Si te ha sido útil, no olvides darle una ⭐ en GitHub.
 
-</div
+Si te ha sido útil, no olvides darle una ⭐ al repositorio.
 
+<br>
+
+ElectroMarket — BigQuery Data Modeling Project
+
+</div> ```
 
 
