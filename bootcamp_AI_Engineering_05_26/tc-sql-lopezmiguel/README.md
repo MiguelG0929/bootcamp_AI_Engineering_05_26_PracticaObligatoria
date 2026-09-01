@@ -101,7 +101,7 @@ El modelo está compuesto por **7 entidades** totalmente normalizadas:
 
 ### 🔗 Relaciones Principales
 
-
+~~~
 mermaid
 graph LR
     A[customers] -->|1:N| B[orders]
@@ -118,18 +118,20 @@ graph LR
     style E fill:#bfb,stroke:#333,stroke-width:2px
     style F fill:#fbb,stroke:#333,stroke-width:2px
     style G fill:#ffb,stroke:#333,stroke-width:2px
+~~~
+
 Nota: La relación N:M entre orders y products se resuelve mediante la tabla asociativa order_items.
 
 El diagrama completo se encuentra en:
 
-text
+
 docs/er_diagram.png
 <div align="center">
 🏗️ Estructura del Proyecto
 </div>
 El proyecto está organizado de forma clara y modular:
 
-text
+~~~
 parte_2_modelo_bigquery/
 ├── 📁 docs/
 │   └── 📄 er_diagram.png              # Diagrama Entidad-Relación
@@ -147,6 +149,8 @@ parte_2_modelo_bigquery/
 ├── 📄 requirements.txt                 # Dependencias de Python
 ├── 📄 .gitignore                       # Archivos ignorados
 └── 📄 README.md                        # Documentación principal
+~~~
+
 <div align="center">
 💻 Tecnologías Utilizadas
 </div>
@@ -195,47 +199,52 @@ TOTAL	~7.927	Volumen de datos completo para análisis
 
 🚀 Pasos de Instalación
 1️⃣ Clonar el repositorio
-bash
+
+~~~
 git clone <URL_DEL_REPOSITORIO>
 cd <NOMBRE_DEL_REPOSITORIO>
+~~~
+
 2️⃣ Crear el entorno virtual
 En Windows con Git Bash:
-
-bash
+~~~
 python -m venv .venv
 source .venv/Scripts/activate
+~~~
 En PowerShell:
-
+~~~
 powershell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
+~~~
 En Linux/Mac:
-
-bash
+~~~
 python3 -m venv .venv
 source .venv/bin/activate
+~~~
 3️⃣ Instalar las dependencias
-bash
+~~~
 pip install -r requirements.txt
+~~~
 4️⃣ Configurar Google Cloud
 Crear una Service Account en Google Cloud Console
 
 Descargar la clave JSON de la Service Account
 
 Guardar el archivo JSON en la carpeta credentials/
-
-text
+~~~
 credentials/
 └── tu-archivo-credenciales.json
+~~~
 ⚠️ Importante: Nunca subir el archivo de credenciales al repositorio
 
 5️⃣ Configurar variables de entorno
 Crear un archivo .env en la raíz del proyecto a partir de .env.example:
-
-env
+~~~
 GCP_PROJECT_ID=tu-proyecto-gcp
 BQ_DATASET_ID=electromarket
 GOOGLE_APPLICATION_CREDENTIALS=credentials/tu-archivo-credenciales.json
+~~~
 <div align="center">
 🚀 Ejecución del Proyecto
 </div>
@@ -243,9 +252,9 @@ Los notebooks deben ejecutarse en el siguiente orden:
 
 1️⃣ Configuración de BigQuery
 Abrir:
-
-text
+~~~
 notebooks/01_setup_bigquery.ipynb
+~~~
 Este notebook:
 
 ✅ Carga las variables de entorno
@@ -262,9 +271,9 @@ Este notebook:
 
 2️⃣ Generación y carga de datos
 Abrir:
-
-text
+~~~
 notebooks/02_generate_data.ipynb
+~~~
 Este notebook:
 
 ✅ Genera datos sintéticos utilizando Python y Faker
@@ -279,9 +288,9 @@ Este notebook:
 
 3️⃣ Consultas analíticas y verificación
 Abrir:
-
-text
+~~~
 notebooks/03_queries_verification.ipynb
+~~~
 Este notebook:
 
 ✅ Ejecuta consultas analíticas directamente sobre BigQuery
@@ -305,9 +314,11 @@ El proyecto incluye 6 consultas analíticas que responden preguntas de negocio c
 Cada consulta está optimizada para BigQuery y utiliza funciones SQL avanzadas.
 
 <div align="center">
+
 📚 Dependencias Principales
 </div>
-text
+
+~~~
 pandas>=2.0.0                # Manipulación y análisis de datos
 faker>=20.0.0                # Generación de datos sintéticos
 python-dotenv>=1.0.0         # Gestión de variables de entorno
@@ -315,10 +326,13 @@ google-cloud-bigquery>=3.0.0 # Cliente oficial de BigQuery
 pandas-gbq>=0.19.0           # Carga de DataFrames a BigQuery
 db-dtypes>=1.0.0             # Tipos de datos para BigQuery
 pyarrow>=12.0.0              # Serialización eficiente
-Las versiones completas se encuentran en:
+~~~
 
-text
+Las versiones completas se encuentran en:
+~~~
 requirements.txt
+~~~
+
 <div align="center">
 🔒 Seguridad
 </div>
@@ -355,4 +369,7 @@ Este proyecto está bajo la licencia MIT - ver el archivo LICENSE para más deta
 ⭐ ¡Gracias por visitar este proyecto!
 Si te ha sido útil, no olvides darle una ⭐ en GitHub.
 
-</div>
+</div
+
+
+
